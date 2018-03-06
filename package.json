@@ -1,0 +1,23 @@
+{
+    "name": "electron-kit",
+    "version": "0.0.1",
+    "description": "A sibilant lisp shell embeded in an electron instance, for programming desktop applications in sibilant",
+    "main": "main.js",
+    "bin": {
+        "electron-kit": "./bin/electron-kit"
+    },
+    "scripts": {
+        "start-electron": "electron ./js/electron-init.js",
+        "start": "node ./js/server.js",
+        "compile": "sibilant ./src/*.sibilant -o ./js"
+    },
+    "dependencies": {
+        "jimp": "^0.2.28",
+        "ramda": "^0.22.1",
+        "sibilant": "https://bitbucket.org/kettlelogic/sibilant.git",
+        "electron": "*",
+        "kit": "git+ssh://riatzukiza@192.168.0.150:1250/H/gits/kit",
+        "kit-repl": "git+ssh://riatzukiza@192.168.0.150:1250/H/gits/kit-repl",
+        "source-map-support": "^0.4.11"
+    }
+}
